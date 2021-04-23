@@ -1,0 +1,118 @@
+.container {
+    font-family: 'Montserrat', sans-serif;
+    width: 1280px;
+    height: 1626px;
+}
+
+.header {
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-photo {
+    height: 789px;
+}
+
+.main {
+    height: 1439px;
+}
+
+.nav-list-header {
+    display: flex;
+    justify-content: center;    
+}
+.nav-list-header li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 36px;
+    font-weight: bold;
+    color: #FF0000;
+    height: 27px;
+    font-size: 18px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.nav-link-header {
+    text-decoration: inherit;
+}
+
+.nav-link-header:visited {
+    text-decoration: none;
+    color: #FF0000;
+}
+.main-information {
+    height: 650px;    
+    color: #373737
+}
+
+.main-header {
+    margin: 48px auto 38px;
+    width: 774px;
+    height: 29px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 3.3px;
+    text-transform: uppercase;    
+}
+.main-content-discription {
+    width: 1145px;
+    height: 132px;
+    margin: 0 auto 28px;  
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2.4px;
+}
+
+.main-content-story {
+    width: 1145px;
+    height: 216px;
+    margin: 0 auto 66px;  
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2.4px;
+}
+
+.main-button {
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: #FF0000;
+    width: 191px;
+    height: 51px;
+    text-align: center;
+    color: #FFFFFF;    
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    justify-content: space-around;
+}
+.footer {
+    margin: 40px auto auto;
+    width: 1070px;
+    height: 39px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+}
+.rights-block-footer {
+    width: 462px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 2.4px;
+    color: #373737;
+}
