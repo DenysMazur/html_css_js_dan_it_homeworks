@@ -25,14 +25,15 @@ html {
 	top: 0;
 	left: 0;
 	z-index: -1;
-	transform: translateZ(-150px) scale(4);
+	transform: translateZ(-145px) scale(4);
 	background: center/cover no-repeat;
 }
 
 .parallax-bg-section_header::before {
 	background-image: url(../img/bg-img/header-bg.jpeg);
     background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: multiply; 
+    background-blend-mode: multiply;
+    background-size: auto;
     background-position-x: center;
     background-position-y: -487px;    
 }
@@ -53,13 +54,13 @@ html {
 	top: 0;
 	left: 0;
 	z-index: -1;
-	transform: translateZ(-150px) scale(4);
+	transform: translateZ(-145px) scale(4);
 	background: center/cover no-repeat;
 }
 
 .parallax-bg-section-main::before {
 	background-image: url(../img/bg-img/parallax-bg.jpeg);    
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);    
     background-blend-mode: multiply;
     background-position-x: center;    
 }
