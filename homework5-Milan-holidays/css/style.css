@@ -1,0 +1,190 @@
+.container {
+    width: 1366px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    background-image: url(../img/bg/background.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header" "main" "footer";
+}
+
+.header {
+    grid-area: header;
+    margin: 46px 177px 17px 161px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-header {
+    margin: 5px 0;
+}
+
+.link-logo-header {
+    display: flex;
+    background-image: url(../img/logo/logo-milan-holidays.png);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-logo-header:hover {
+    color: #F26522;
+    background-image: url(../img/logo/logo-milan-holidays-hover.png);
+}
+
+.title-logo-header {
+    padding-left: 63px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-logo-header h2 {
+    font-size: 29px;
+    line-height: 30px;
+}
+
+.title-logo-header h3 {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.contacts-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contacts-header p a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.contacts-header p a:hover {
+    color: #F26522;
+}
+
+.main {
+    grid-area: main;
+    margin: 0 177px 48px 159px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 37px;
+    justify-content: space-between;
+}
+
+.main div a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.wraper-img-main {
+    width: 300px;
+    height: 220px;
+    overflow: hidden;
+    margin: 0 5px 0 4px;
+    position: relative;
+    box-sizing: border-box;
+    border: 4px solid transparent;
+    border-image: linear-gradient(120deg, #000, #FFF);
+    border-image-slice: 1;
+}
+
+.wraper-img-main img {
+    width: 300px;
+    height: 220px;
+    display: block;
+}
+
+.bottom-text-main {
+    margin-top: 23px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.zoom-wrapper-img-main img {
+    min-width: 310px;
+    min-height: 230px;
+    margin-left: -5px;
+}
+
+.hidden-content-wraper-img-main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #F26522;
+    transform: scale(0.5) translate(0, 0);
+    opacity: 0;
+}
+
+@keyframes sheen {
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+.main div:hover .hidden-content-wraper-img-main {
+    opacity: 1;
+    animation: sheen 1s forwards;
+}
+
+.hidden-content-wraper-img-main p {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 7px 0 8px 16px;
+}
+
+.bottom-text-hidden-content-wraper-img-main {
+    margin-left: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.bottom-text-hidden-content-wraper-img-main h2 {
+    font-size: 20px;
+    line-height: 14px;
+}
+
+.bottom-text-hidden-content-wraper-img-main h3 {
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 37px;
+}
+
+.bottom-text-hidden-content-wraper-img-main h3::after {
+    content: "\f105";
+    font-family: FontAwesome;
+    margin-left: 16px;
+    font-size: 20px;
+    position: absolute;
+}
+
+.main div:hover .bottom-text-main {
+    color: #F26522;
+}
+
+.footer {
+    grid-area: footer;
+    margin: 0 auto 15px;
+}
+
+.footer div h3 {
+    font-size: 12px;
+    line-height: 12px;
+}
