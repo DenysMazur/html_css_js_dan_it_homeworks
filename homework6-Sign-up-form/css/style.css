@@ -1,0 +1,367 @@
+.container {    
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    background-image: url(../img/body-background.png);    
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 79px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+}
+
+.header:hover {
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.41;
+}
+
+.logo-header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-header h2 {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.logo-header h2:hover {
+    color: rgba(60, 184, 120, 1);
+}
+
+.navigation-header {
+    display: flex;
+    align-items: center;
+}
+
+.greeting_info-navigation-header {
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+}
+
+.greeting_info-navigation-header h3:nth-child(2)::before {
+    content: "\a0";
+}
+
+.greeting_info-navigation-header h3>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.greeting_info-navigation-header h3>a:hover {
+    color: rgba(60, 184, 120, 1);
+}
+
+.svg-icon-navigation-header {
+    display: block;
+    fill: #FFFFFF;
+    width: 23px;
+    height: 24px;
+}
+
+.svg-icon-navigation-header:hover {
+    fill: rgba(60, 184, 120, 1);
+}
+
+.icons-navigation-header {
+    width: 126px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.separator-navigation-header {
+    width: 1px;
+    height: 19px;
+    margin: 0 26px;
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0.5;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.form-main {    
+    margin-top: 53px;
+    margin-bottom: 72px;
+    width: 444px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.52);
+    padding: 31px 60px 38px;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+.form-main::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: rgba(60, 184, 120, 1);
+    left: 0;
+}
+
+.header-form-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-form-main h2 {
+    font-size: 20px;
+    line-height: 20px;
+    color: #434343;
+}
+
+.header-form-main h3 {
+    font-size: 14px;
+    line-height: 14px;
+    color: #3CB878;
+}
+
+.header-form-main h3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-form-main h3 a:hover {
+    color: rgba(1, 129, 63, 1);
+    text-decoration: underline;
+}
+
+.social_media-login-form-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 31px;
+}
+
+.facebook_login_button_social_media-login-form-main {
+    background-color: rgba(48, 93, 184, 1);
+}
+
+.facebook_login_button_social_media-login-form-main:hover {
+    background-color: rgba(2, 34, 99, 1);
+}
+
+.facebook-svg-icon-login-form-main {
+    display: block;
+    fill: #FFFFFF;
+    width: 14px;
+    height: 24px;
+}
+
+.google_login_button_social_media-login-form-main {
+    background-color: rgba(223, 74, 50, 1);
+}
+
+.google_login_button_social_media-login-form-main:hover {
+    background-color: rgba(171, 31, 9, 1);
+}
+
+.google_plus-svg-icon-login-form-main {
+    display: block;
+    fill: #FFFFFF;
+    width: 30px;
+    height: 33px;
+}
+
+.social_media-login-form-main button {
+    width: 160px;
+    box-shadow: none;
+    font-family: 'Ubuntu', sans-serif;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.social_media-login-form-main button:first-child svg {
+    margin: 0 17px 0 19px;
+}
+
+.social_media-login-form-main button:first-child div {
+    margin-right: 18px;
+}
+
+.social_media-login-form-main button:nth-child(2) svg {
+    margin: 0 7px 0 12px;
+}
+
+.social_media-login-form-main button:nth-child(2) div {
+    margin-right: 30px;
+}
+
+.separator-social_media-login-form-main {
+    width: 1px;
+    height: 28px;
+    background: #2B0D09;
+    opacity: 0.1;
+}
+
+.social_media-login-form-main button h3 {
+    margin: 17px 0;
+}
+
+.separator-form-main p {
+    font-size: 14px;
+    line-height: 14px;
+    color: #848484;
+    overflow: hidden;
+    text-align: center;
+}
+
+.separator-form-main p:before, .separator-form-main p:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #F2F2F2;
+    position: relative;
+}
+
+.separator-form-main p:before {
+    margin-left: -100%;
+    left: -5px;
+}
+
+.separator-form-main p:after {
+    margin-right: -100%;
+    right: -2px;
+}
+
+.direct_login_form-main input[name="first_name"] {
+    margin-top: 11px;
+}
+
+.direct_login_form-main input[name="first_name"], .direct_login_form-main input[name="last_name"], .direct_login_form-main input[name="email"], .direct_login_form-main input[name="password"] {
+    margin-bottom: 15px;
+    padding: 16px 0 15px 20px;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    width: 324px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 14px;
+    color: #434343;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.direct_login_form-main input[name="cheacking_password"] {
+    margin-bottom: 12px;
+    padding: 16px 0 15px 20px;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    width: 324px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 14px;
+    color: #434343;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.direct_login_form-main div input::placeholder {
+    font-size: 14px;
+    line-height: 14px;
+    color: #BEBEBE;
+}
+
+.direct_login_form-main div input:focus {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.21);
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+}
+
+.direct_login_form-main div input:focus-visible {
+    outline: none !important;
+}
+
+.cheackbox-direct_login_form-main label {
+    color: #434343;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.cheackbox-direct_login_form-main label a {
+    text-decoration: none;
+    color: #3CB878;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.cheackbox-direct_login_form-main label a:hover {    
+    color: rgba(1, 129, 63, 1);
+    text-decoration: underline;
+}
+
+.custom-checkbox-direct_login_form-main {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox-direct_login_form-main+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox-direct_login_form-main+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #F2F2F2;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;    
+    font-size: 14px;
+    line-height: 14px;
+    box-sizing: border-box;
+}
+
+.custom-checkbox-direct_login_form-main:checked+label::before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 7.5L7 14.5L15 1' stroke='%233CB878' stroke-width='2'/%3e%3c/svg%3e");
+}
+
+.custom-checkbox-direct_login_form-main:hover:checked+label::before {    
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 7.5L7 14.5L15 1' stroke='%2301813F' stroke-width='2'/%3e%3c/svg%3e");
+}
+
+.submit-direct_login_form-main {
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px 99px;
+    border-radius: 4px;
+    background: rgba(60, 184, 120, 0.8);
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    border-width: 0;
+}
+
+.submit-direct_login_form-main:hover {
+    background: rgba(1, 129, 63, 1);
+}
