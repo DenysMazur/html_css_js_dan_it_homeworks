@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+//main text colors:
+$white_color: #FFFFFF;
+$grey_color: #484848;
+
+//background colors:
+$bg_light_color: #FAFAFA;
+$bg_light_grey_color: #F2F2F2;
+$bg_grey_color: #E3E3E3;
+$bg_light_dark_color: #484848;
+$bg_standard_color: #89C331;
+$bg_ultimate_color: #F04A56;
+$bg_premium_color: #20807C;
+
+//border colors:
+$table_border_color: #3A4965;
+
+//main-font-family:
+$project_font_family: 'Arimo', sans-serif;
+
+//font-weight:
+$bold_font_weight: 700;
+$regular_font_weight: 400;
+
+@mixin font-properties ($f_number, $f_line_height, $f_color: $bg_light_dark_color, $f_weight: $bold_font_weight) {
+  font-size: $f_number;
+  line-height: $f_line_height;
+  color: $f_color;
+  font-weight: $f_weight;
+  text-transform: uppercase; 
+}
+
+@mixin border-table ($top_border, $right_border, $bottom_border, $left_border) {
+  border-top-width: $top_border;
+  border-right-width: $right_border;
+  border-bottom-width: $bottom_border;
+  border-left-width: $left_border;
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: $table_border_color;
+  border-spacing: 0;
+}
+
+@mixin button-style ($button_width: 195px, $button_height: 54px, $bg_color: $bg_light_dark_color) {
+  padding: 0;
+  border-style: none;
+  width: $button_width;
+  font-family: $project_font_family;  
+  border-bottom: $button_height / 6 solid darken($color: $bg_color, $amount: 4);
+  padding-top: $button_height / 6;
+  border-radius: 5px;
+  height: $button_height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg_color;
+}
+
+.container {
+  font-family: $project_font_family;
+  
+}
+
+.container__full-version-table {
+  text-align: center;  
+  margin: 0 auto;
+  @include border-table(22px, 29px, 32px, 20px);
+
+  
+  tr, td, th {
+    vertical-align: middle;
+    border-left: 1px solid #D3D3D3;
+  }
+
+  &__colgroup {
+    col:first-child {
+      width: 313px;
+    }
+  
+    col:last-child {
+      width: 284px;
+    }
+  }
+
+  &__header {
+    background-color: $bg_light_color;
+  
+    tr:first-child {
+      height: 73px;
+      @include font-properties(24px, 28px, $white_color);
+
+      th:first-child {
+        @include font-properties(18px, 28px, $bg_light_dark_color);
+        span {
+          font-size: 30px;
+          line-height: 43px;
+        }
+      }
+
+      th:nth-child(2) {
+        background-color: $bg_standard_color;
+        border: $bg_standard_color;
+      }
+
+      th:nth-child(3) {
+        background-color: $bg_ultimate_color;
+        border: $bg_ultimate_color;
+        font-size: 30px;
+      }
+
+      th:nth-child(4) {
+        background-color: $bg_premium_color;
+        border: $bg_premium_color;
+      }
+    }
+  
+    tr:last-child {
+      height: 89px;
+    }
+    
+    .wraper-for-price {
+      display: flex;
+      justify-content: center;
+
+      div:first-child {
+        @include font-properties(60px, 60px);
+        margin-top: 9px;
+      }
+
+      div:last-child {
+        font-size: 24px;
+        text-align: left;
+      }
+
+      span {
+      display: block;
+      @include font-properties(18px, 18px, $f_weight: $regular_font_weight);
+      }  
+    }
+  }
+
+  &__body {
+    @include font-properties(16px, 16px, $f_weight: $regular_font_weight);
+
+    tr {
+      height: 72px;
+
+      &:nth-child(odd) {
+        background-color: $bg_light_grey_color;
+      }
+
+      &:nth-child(even) {
+        background-color: $bg_grey_color;    
+      }
+    }
+
+    @for $i from 1 through 6 {
+      &__first-column-row-#{$i} {
+        &::before {
+          content: "";
+          display: inline-block;          
+          background-image: url(../img/body-icon-#{$i}.png);          
+          background-repeat: no-repeat;
+          margin-right: 4px;
+          @if $i == 1 {          
+            height: 21px;
+            width: 21px;  
+          } @else if $i == 2 {
+            height: 19px;
+            width: 27px;
+          } @else if $i == 3 {
+            height: 20px;
+            width: 26px;
+          } @else if $i == 4 {
+            height: 24px;
+            width: 25px;
+          } @else if $i == 5 {
+            height: 23px;
+            width: 25px;
+          } @else if $i == 6 {
+            height: 25px;
+            width: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    tr {
+      height: 109px;
+        @for $i from 1 through 4 {
+        & td:nth-child(#{$i}) {
+          @if $i == 1 {
+            background-color: #DDDDDD;
+            button {
+                @include button-style();
+                @include font-properties(16px, 16px, $f_color: $white_color);
+                &:hover {
+                  cursor: pointer;
+                }         
+              }
+          } @else if $i == 2 {
+            background-color: #EEEEEE;
+            button {
+              @include button-style($bg_color: $bg_standard_color);
+              @include font-properties(16px, 16px, $f_color: $white_color);
+              &:hover {
+                cursor: pointer;
+              }         
+            }
+          } @else if $i == 3 {
+            background-color: #F4F4F4;
+            button {
+              @include button-style($bg_color: $bg_ultimate_color);
+              @include font-properties(16px, 16px, $f_color: $white_color);
+              &:hover {
+                cursor: pointer;
+              }         
+            }
+          } @else if $i == 4 {
+            background-color: #EEEEEE;
+            button {
+              @include button-style($bg_color: $bg_premium_color);
+              @include font-properties(16px, 16px, $f_color: $white_color);
+              &:hover {
+                cursor: pointer;
+              }         
+            }
+          }
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.container__tablet-version-table {
+  text-align: center;  
+  margin: 10px auto;
+  @include border-table(28px, 27px, 21px, 27px);
+
+  &__colgroup {    
+    col:first-child {
+      width: 201px;
+      background-color: $bg_light_color;
+    }
+    
+    col {
+      width: 160px;
+      @for $i from 2 to 8 {
+        &:nth-child(#{$i}) {
+          background-color: $bg_grey_color;
+          @if $i == 3 or $i == 5 or $i == 7 {
+            background-color: $bg_light_grey_color;
+          }
+        }
+      }
+    }
+  }
+
+  tr, td, th {
+    vertical-align: middle;
+    border-bottom: 1px solid #D3D3D3;
+  }
+
+  th {
+    border-bottom: 15px solid $table_border_color;
+  }
+
+  &__header {
+    tr {
+      height: 115px;
+
+      @for $i from 1 through 7 {
+        @include font-properties(24px, 28px);        
+        & th:nth-child(#{$i}) {
+          @if $i == 1 {
+            p {
+              @include font-properties(14px, 14px);
+            }
+            span {
+              @include font-properties(20px, 28px);
+            }
+          } @else if $i == 2 {
+            &::before {
+              $j: $i - 1;
+              content: "";
+              display: block;
+              background-image: url(../img/body-icon-#{$j}.png);
+              background-repeat: no-repeat;
+              margin-bottom: 8px;
+              height: 22px;
+              background-position: center; 
+            } 
+          } @else if $i == 3 {
+            &::before {
+              $j: $i - 1;
+              content: "";
+              display: block;
+              background-image: url(../img/body-icon-#{$j}.png);
+              background-repeat: no-repeat;
+              margin-bottom: 8px;
+              height: 22px;
+              background-position: center; 
+            } 
+          } @else if $i == 4 {
+            &::before {
+              $j: $i - 1;
+              content: "";
+              display: block;
+              background-image: url(../img/body-icon-#{$j}.png);
+              background-repeat: no-repeat;
+              margin-bottom: 8px;
+              height: 22px;
+              background-position: center; 
+            } 
+          } @else if $i == 5 {
+            &::before {
+              $j: $i - 1;
+              content: "";
+              display: block;
+              background-image: url(../img/body-icon-#{$j}.png);
+              background-repeat: no-repeat;
+              margin-bottom: 8px;
+              height: 24px;
+              background-position: center; 
+            } 
+          } @else if $i == 6 {
+            &::before {
+              $j: $i - 1;
+              content: "";
+              display: block;
+              background-image: url(../img/body-icon-#{$j}.png);
+              background-repeat: no-repeat;
+              margin-bottom: 8px;
+              height: 26px;
+              background-position: center; 
+            } 
+          } @else if $i == 7 {
+            &::before {
+              $j: $i - 1;
+              content: "";
+              display: block;
+              background-image: url(../img/body-icon-#{$j}.png);
+              background-repeat: no-repeat;
+              margin-bottom: 8px;
+              height: 26px;
+              background-position: center; 
+            } 
+          }
+        }
+      }
+    }
+  }
+  &__body {
+    tr {
+      height: 164px;
+      @include font-properties(16px, 24px, $f_weight: $regular_font_weight);      
+    }
+    @for $i from 1 through 3 {
+      &__row-column-#{$i} {
+        color: $white_color;
+        font-weight: $bold_font_weight;
+        @if $i == 1 {
+          background-color: $bg_standard_color;
+          p {
+            font-size: 24px;
+            line-height: 28px;
+          }
+          .wraper-for-price {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            div:nth-child(1) {
+              font-size: 36px;
+              line-height: 28px;
+              sup {
+                font-size: 18px;
+                line-height: 28px;
+                vertical-align: super;
+              }
+            }
+            div:nth-child(2) {
+              font-size: 14px;
+              line-height: 28px;
+              margin-left: 3px;
+            }
+          }
+          button {
+            margin: 13px auto 0;
+            @include button-style(147px, 44px);
+            @include font-properties(16px, 16px, $f_color: $white_color);
+              &:hover {
+                cursor: pointer;
+              }
+          }
+        } @else if $i == 2 {
+          background-color: $bg_ultimate_color;
+          p {
+            font-size: 24px;
+            line-height: 28px;
+          }
+          .wraper-for-price {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            div:nth-child(1) {
+              font-size: 36px;
+              line-height: 28px;
+              sup {
+                font-size: 18px;
+                line-height: 28px;
+                vertical-align: super;
+              }
+            }
+            div:nth-child(2) {
+              font-size: 14px;
+              line-height: 28px;
+              margin-left: 3px;
+            }
+          }
+          button {
+            margin: 13px auto 0;
+            @include button-style(147px, 44px);
+            @include font-properties(16px, 16px, $f_color: $white_color);
+              &:hover {
+                cursor: pointer;
+              }
+          }
+        } @else if $i == 3 {
+          background-color: $bg_premium_color;
+          p {
+            font-size: 24px;
+            line-height: 28px;
+          }
+          .wraper-for-price {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            div:nth-child(1) {
+              font-size: 36px;
+              line-height: 28px;
+              sup {
+                font-size: 18px;
+                line-height: 28px;
+                vertical-align: super;
+              }
+            }
+            div:nth-child(2) {
+              font-size: 14px;
+              line-height: 28px;
+              margin-left: 3px;
+            }
+          }
+          button {
+            margin: 13px auto 0;
+            @include button-style(147px, 44px);
+            @include font-properties(16px, 16px, $f_color: $white_color);
+              &:hover {
+                cursor: pointer;
+              }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
