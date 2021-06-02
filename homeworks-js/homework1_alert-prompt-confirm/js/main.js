@@ -1,7 +1,7 @@
 let userName = prompt('Name?');
 let userAge = prompt('Age?');
 
-while (userName === null || userAge === null || Number.isNaN(Number(userAge))) {
+while (userName === null || userName.length === 0 || userAge.length === 0 || userAge === null || Number.isNaN(Number(userAge))) {
   if (userName === null) {
     userName = prompt('Name', `${userName = ''}`);
   } else {
