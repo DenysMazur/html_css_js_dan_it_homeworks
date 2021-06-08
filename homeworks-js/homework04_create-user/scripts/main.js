@@ -10,7 +10,7 @@
 //   return newUser;
 // }
 
-// let newUser = createNewUser();
+// const newUser = createNewUser();
 
 // function getLogin() {
 //   let login = null; 
@@ -50,7 +50,7 @@ function CreateNewUser() {
   });
 }
 
-let newUser = new CreateNewUser();
+const newUser = new CreateNewUser();
 
 newUser.getLogin = function () {  
   return `${this.firstName[0].toLowerCase()}${this.lastName.toLowerCase()}`
