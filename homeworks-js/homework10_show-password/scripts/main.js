@@ -9,6 +9,7 @@ document.addEventListener('click', (event) => {
 })
 
 document.addEventListener('submit', (event) => {
+  event.preventDefault();
   const arrayOfInputsValue = [];
   const collectionOfLabels = document.querySelectorAll('.input-wrapper');
   const lastLabel = collectionOfLabels[collectionOfLabels.length - 1];
