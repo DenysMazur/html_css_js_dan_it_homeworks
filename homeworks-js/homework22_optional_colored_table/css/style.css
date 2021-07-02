@@ -1,0 +1,36 @@
+.main-table-white {
+  margin: 50px auto;
+  text-align: center;  
+}
+
+.main-table-black {
+  margin: 50px auto;
+  text-align: center;  
+}
+
+.main-table-column {
+  height: 30px;
+  width: 30px;
+  font-size: 10px;
+  color: grey; 
+  border: 1px solid black;
+  vertical-align: middle;
+}
+
+.active {
+  border: 1px solid aliceblue;
+  background-color: black;
+  color: aliceblue;
+}
+
+.main-table-black .main-table-column {
+  border: 1px solid aliceblue;
+  background-color: black;
+  color: aliceblue;
+}
+
+.main-table-black .active {
+  background-color: aliceblue;
+  color: grey; 
+  border: 1px solid black;
+}
