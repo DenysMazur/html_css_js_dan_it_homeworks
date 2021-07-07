@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banners</title>
+    <style>
+      .image-to-show {
+        width: 400px;
+        height: 400px;
+      }
+
+      .images-wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+      }
+
+      .menu-wrapper {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+
+      }
+
+      .timer-slider {
+        width: 50px;
+        margin: 0 55px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="images-wrapper">
+      <img src="./img/1.jpg" alt="image of game" class="image-to-show" />
+      <img src="./img/2.jpg" alt="image of game" class="image-to-show" />
+      <img src="./img/3.JPG" alt="image of game" class="image-to-show" />
+      <img src="./img/4.png" alt="image of game" class="image-to-show" />
+    </div>
+    <div class="menu-wrapper">
+    <button class="stop-slider">Прекратить</button>
+    <div class="timer-slider"><span class="timer-seconds"></span>.<span class="timer-miliseconds"></span></div>
+    <button class="start-slider">Возобновить показ</button>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
