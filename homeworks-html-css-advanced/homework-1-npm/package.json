@@ -1,0 +1,28 @@
+{
+  "name": "project-x",
+  "version": "1.0.0",
+  "description": "fe-2 start npm program",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/Just_infinity/html_css_js_dan_it_homeworks.git"
+  },
+  "author": "Denys Mazur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Just_infinity/html_css_js_dan_it_homeworks.git"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "eslint": "^7.31.0",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "moment": "^2.29.1"
+  }
+}
