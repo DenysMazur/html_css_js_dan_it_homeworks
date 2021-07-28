@@ -1,0 +1,18 @@
+#wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 26px;
+  font-family: $project-font-family;
+  @include respond-to('medium') {
+    padding: 0 80px;      
+  }
+  @include respond-to('large') {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

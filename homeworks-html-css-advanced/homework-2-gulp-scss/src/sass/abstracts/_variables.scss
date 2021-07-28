@@ -1,0 +1,33 @@
+// media variables________________________________________________________________________________
+$breakpoints: (
+  'small': (min-width: 320px),
+  'medium': (min-width: 768px),
+  'large': (min-width: 1200px),
+);
+
+//fonts-variables________________________________________________________________________________
+$project-font-family: 'Roboto', sans-serif;
+$bold-font-weight: 700;
+
+// sizes-variables________________________________________________________________________________
+$max-width: 1170px;
+
+//colors-variables________________________________________________________________________________
+$main-color: #4E4E4E;
+$main-black-color: #000000;
+$btn-items-background-color: #FFFFFF;
+$btn-background-color: $main-black-color;
+$menu-background-color: #F5F5F5;
+$menu-item-color: $main-color;
+$menu-item-background-color-hover: #E5E5E5;
+$menu-link-color-active: #57A4A4;
+$posts-title-color: $main-color;
+$posts-main-link-color: $main-color;
+$posts-content-comments-color: #7C7C7C;
+$posts-content-text-color: #5C5C5C;
+$footer-background-color: $main-black-color;
+$footer-title-color: #FEFEFE;
+$footer-text-color: #B9B9B9;
+
+//animation variables____________________________________________________________________________
+$transition: cubic-bezier(.17,.67,.42,1.36);

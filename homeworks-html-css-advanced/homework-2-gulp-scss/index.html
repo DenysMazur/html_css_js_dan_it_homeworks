@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/style.min.css">
+  <title>Homework-2-gulp-scss</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="header__navigation">
+          <button class="menu-btn header__menu-btn" aria-labelledby="sr-only">
+            <span class="sr-only" id="sr-only">Menu</span>
+            <div class="menu-btn__icon" aria-hidden="true">
+              <span class="icon icon--menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span class="icon icon--close">
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <ul class="menu header__menu header__menu--hidden">
+              <li class="menu__item"><a class="menu__link menu__link--active" href="#">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">about us</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">our journal</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">projects</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">news</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">features</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">contact</a></li>
+            </ul>
+          </button>
+          <ul class="header__menu-standard">
+            <li class="menu__item"><a class="menu__link menu__link--active" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">about us</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">our journal</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">projects</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">news</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">features</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">contact</a></li>
+          </ul>
+        </nav>
+        <img class="header__main-image" src="./dist/images/intro-img-1.min.jpg" alt="intro-img">
+      </div>
+    </header>
+    <section class="recent-posts">
+      <div class="container recent-posts__container">
+        <h2 class="recent-posts__title">- our Recent posts</h2>
+        <div class="recent-posts__grid-container">
+          <div class="recent-posts__wrapper">
+            <img class="recent-posts__image" src="./dist/images/post-img-1.min.jpg" alt="post1-image">
+            <div class="content recent-posts__content">
+              <a class="content__main-link" href="#">Aenean Adipiscing Etiam Vestibulum</a>
+              <div class="content__comments-wrapper">
+                <a class="content__author-link" href="#">Photography, Journal</a>
+                <div class="content__separator">/</div>
+                <a class="content__comments-link" href="#">9 Comments</a>
+              </div>
+              <p class="content__text content__text--hidden">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+          <div class="recent-posts__wrapper">
+            <img class="recent-posts__image" src="./dist/images/post4img-1.min.jpg" alt="post2-image">
+            <div class="content recent-posts__content">
+              <a class="content__main-link" href="#">Aenean Adipiscing Etiam Vestibulum</a>
+              <div class="content__comments-wrapper">
+                <a class="content__author-link" href="#">Photography, Journal</a>
+                <div class="content__separator">/</div>
+                <a class="content__comments-link" href="#">9 Comments</a>
+              </div>
+              <p class="content__text content__text--hidden">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+          <div class="recent-posts__wrapper">
+            <img class="recent-posts__image" src="./dist/images/post1img-1.min.jpg" alt="post3-image">
+            <div class="content recent-posts__content">
+              <a class="content__main-link" href="#">Aenean Adipiscing Etiam Vestibulum</a>
+              <div class="content__comments-wrapper">
+                <a class="content__author-link" href="#">Photography, Journal</a>
+                <div class="content__separator">/</div>
+                <a class="content__comments-link" href="#">9 Comments</a>
+              </div>
+              <p class="content__text content__text--hidden">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+          <div class="recent-posts__wrapper recent-posts__wrapper--hidden">
+            <img class="recent-posts__image" src="./dist/images/post6img-1.min.jpg" alt="post4-image">
+            <div class="content recent-posts__content">
+              <a class="content__main-link" href="#">Aenean Adipiscing Etiam Vestibulum</a>
+              <div class="content__comments-wrapper">
+                <a class="content__author-link" href="#">Photography, Journal</a>
+                <div class="content__separator">/</div>
+                <a class="content__comments-link" href="#">9 Comments</a>
+              </div>
+              <p class="content__text content__text--hidden">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="instarram-short">
+      <div class="container instarram-short__container">
+        <div class="instarram-short__title-wrapper">
+          <h3 class="instarram-short__title">- Last Instagram Shot<span class="instarram-short__title-hidden-text">s</span></h3>
+          <a class="instarram-short__link instarram-short__link--hidden" href="#">go to our instagram page -</a>
+        </div>
+        <div class="instarram-short__images-wrapper">
+          <img class="instarram-short__image" src="./dist/images/post-1-1.min.jpg" alt="instagram-image1">
+          <img class="instarram-short__image instarram-short__image--hidden" src="./dist/images/post-2-1.min.jpg"
+            alt="instagram-image2">
+          <img class="instarram-short__image instarram-short__image--hidden" src="./dist/images/post-3-1.min.jpg"
+            alt="instagram-image3">
+          <img class="instarram-short__image instarram-short__image--hidden-last" src="./dist/images/post-4-1.min.jpg"
+            alt="instagram-image4">
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <h3 class="footer__title">- get in touch with us -</h3>
+        <p class="footer__discription">Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor amet sed donec malesuada ullamcorper odio. <span class="footer__additional-text">Curabitur blandit tempus porttitor vollisky inceptos mollisestor.</span>
+        </p>
+        <div class="footer__social-media-wrapper">
+          <a class="footer__social-media-link" href="#"><img src="./dist/images/rss.min.svg" alt="rss-logo"></a>
+          <a class="footer__social-media-link" href="#"><img src="./dist/images/facebook.min.svg"
+              alt="facebook-logo"></a>
+          <a class="footer__social-media-link" href="#"><img src="./dist/images/twitter.min.svg" alt="twiter-logo"></a>
+          <a class="footer__social-media-link" href="#"><img src="./dist/images/dribbble.min.svg"
+              alt="dribbble-logo"></a>
+          <a class="footer__social-media-link" href="#"><img src="./dist/images/pinterest.min.svg"
+              alt="pinterest-logo"></a>
+        </div>
+        <p class="footer__contacts"> Moonshine St. 14-05 Light City &nbsp;&nbsp;/<span class="footer__delimiter"></span> T. +00(123) 456 78 90 &nbsp;&nbsp;/<span class="footer__delimiter"></span> first.last@email.com
+        </p>
+      </div>
+    </footer>
+  </div>
+  <script src="./dist/scripts/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+.instarram-short {
+  @include respond-to('medium') {
+    background-color: #F7F7F7;       
+  }
+  &__container {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    @include respond-to('medium') {
+      padding-top: 47px;
+      padding-bottom: 50px;            
+    }
+  }
+  &__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+    @include respond-to('medium') {
+      margin-bottom: 35px;     
+    }
+    @include respond-to('large') {
+      margin-bottom: 24px;     
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    color: $main-color;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: $bold-font-weight;
+    @include respond-to('medium') {
+      font-size: 16px;      
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: $bold-font-weight;
+    color: $main-color;
+    &--hidden {
+      display: none;
+      @include respond-to('medium') {
+        display: block;      
+      }
+    }
+  }
+  &__images-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    @include respond-to('medium') {
+      column-gap: 10px;      
+    }
+  }
+  &__image {
+    width: 100%;
+    display: block;
+    &--hidden {
+      display: none;
+      @include respond-to('medium') {
+        display: block;      
+      }
+    }
+    &--hidden-last {
+      display: none;
+      @include respond-to('large') {
+        display: block;      
+      }
+    }
+  }
+
+  &__title-hidden-text{
+    display: none;
+    @include respond-to('medium') {
+      display: inline;
+    }
+  }
+}
