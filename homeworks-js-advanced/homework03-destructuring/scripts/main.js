@@ -2,7 +2,7 @@ console.log('Задание 1');
 
 const clients1 = ["Гилберт", "Сальваторе", "Пирс", "Соммерс", "Форбс", "Донован", "Беннет"];
 const clients2 = ["Пирс", "Зальцман", "Сальваторе", "Майклсон"];
-const allClients = Array.from(new Set([...clients1, ...clients2]));
+const allClients = [...(new Set([...clients1, ...clients2]))];
 console.log(allClients);
 
 console.log('_____________________________________');
