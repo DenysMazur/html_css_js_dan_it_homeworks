@@ -1,0 +1,12 @@
+.menu__item {
+  text-decoration: none;
+  border: 1px dashed transparent;
+  margin: 0.5rem;
+  
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: underline;
+  }
+}

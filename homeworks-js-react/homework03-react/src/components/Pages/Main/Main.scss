@@ -1,0 +1,11 @@
+.main {
+  min-height: 100vh;
+  padding: 15px 0;
+}
+
+
+.main__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  justify-items: center;  
+}
