@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Logitech G Pro X Superlight Wireless",
+      "price": 4999,
+      "url": "https://content.rozetka.com.ua/goods/images/big_tile/175327815.jpg",
+      "reference": "910-00588",
+      "color": "Black"
+    },
+    {
+      "id": 2,
+      "name": "A4Tech X-710BК USB",
+      "price": 499,
+      "url": "https://content.rozetka.com.ua/goods/images/big_tile/180374315.jpg",
+      "reference": "4711421757874",
+      "color": "Black"
+    },
+    {
+      "id": 3,
+      "name": "Asus TUF M3 USB",
+      "price": 699,
+      "url": "https://content2.rozetka.com.ua/goods/images/big_tile/100245126.jpg",
+      "reference": "90MP01J0-B0UA00",
+      "color": "Black"
+    },
+    {
+      "id": 4,
+      "name": "HyperX Pulsefire Surge USB",
+      "price": 1699,
+      "url": "https://content2.rozetka.com.ua/goods/images/big_tile/11762893.jpg",
+      "reference": "HX-MC002B",
+      "color": "Black"
+    },
+    {
+      "id": 5,
+      "name": "Logitech G102 Lightsync USB",
+      "price": 999,
+      "url": "https://content1.rozetka.com.ua/goods/images/big_tile/24709323.jpg",
+      "reference": "910-005823",
+      "color": "Black"
+    },
+    {
+      "id": 6,
+      "name": "Logitech G Pro Gaming Wireless",
+      "price": 4499,
+      "url": "https://content2.rozetka.com.ua/goods/images/big_tile/86782554.jpg",
+      "reference": "910-005272",
+      "color": "Black"
+    },
+    {
+      "id": 7,
+      "name": "Razer Viper Ultimate Wireless & Mouse Dock",
+      "price": 4499,
+      "url": "https://content1.rozetka.com.ua/goods/images/big_tile/18601344.jpg",
+      "reference": "RZ01-03050100-R3G1",
+      "color": "Black"
+    },
+    {
+      "id": 8,
+      "name": "Bloody J90s USB Black",
+      "price": 799,
+      "url": "https://content.rozetka.com.ua/goods/images/big_tile/24689487.jpg",
+      "reference": "4711421949040",
+      "color": "Black"
+    },
+    {
+      "id": 9,
+      "name": "Logitech G305 Wireless KDA",
+      "price": 1899,
+      "url": "https://content2.rozetka.com.ua/goods/images/big_tile/186592414.jpg",
+      "reference": "910-006053",
+      "color": "White"
+    },
+    {
+      "id": 10,
+      "name": "SteelSeries Rival 3 USB",
+      "price": 1299,
+      "url": "https://content2.rozetka.com.ua/goods/images/big_tile/216121882.jpg",
+      "reference": "SS62513",
+      "color": "Black"
+    },
+    {
+      "id": 11,
+      "name": "SteelSeries Sensei Ten USB Black",
+      "price": 2699,
+      "url": "https://content1.rozetka.com.ua/goods/images/big_tile/17429607.jpg",
+      "reference": "SS62527",
+      "color": "Black"
+    },
+    {
+      "id": 12,
+      "name": "Razer Basilisk X HyperSpeed Wireless",
+      "price": 1799,
+      "url": "https://content.rozetka.com.ua/goods/images/big_tile/19560100.jpg",
+      "reference": "RZ01-03150100-R3G",
+      "color": "Black"
+    }
+  ]
+}
