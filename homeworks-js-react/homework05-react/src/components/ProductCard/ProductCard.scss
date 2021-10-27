@@ -1,0 +1,26 @@
+.main-list__item {
+  padding: 10px 0;
+  background-color: white;
+  width: 295px;
+  border: 1px solid rgb(233, 230, 230);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  & img {
+    max-width: 60%;    
+  }
+}
+
+.item__image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 260px;
+}
+
+.main-item-margin {
+  margin: 10px 0;
+  text-align: center;
+}
